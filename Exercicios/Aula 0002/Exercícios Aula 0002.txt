@@ -1,0 +1,37 @@
+Exercícios Aula 0002
+
+1 - A etapa de preparação pode impactar mais porque dados equivocados, ou valores ruidosos podem gerar uma resposta errada do algoritmo, e isso impacta mais do que um modelo sofisticado
+
+2 - a) Uma das estratégias seria preencher manualmente esses valores , ou de forma automática com uma constante “Desconhecido” por exemplo, ou com a média dos valores
+b) É inadequado remover os valores quando tem uma perda muito grande dos dados, ou quando ele são muito relevantes 
+
+3 - A diferença entre eles é que a Normalização apenas reestrutura a escala dos valores para ser entre um espaço específico, por exemplo [0, 1]. Já a padronização, ela também leva em consideração o desvio padrão, para calcular a distância que os valores estão da média.
+
+4 - a) Para transformar em um modelo, precisamos transformar elas em números, podemos utilizar o One-Hot ENcoding, onde ocorre a criação de pseudoatributos
+b) O problema de utilizarmos apenas codificação numérica simples é que pode correr o risco da máquina entender que possui uma hierarquia entre as variáveis, o que não é o caso, já que sol não está acima de chuva, por exemplo
+
+5 - Nós dividimos em treino, validação e teste porque no treino é quando o modelo aprende os padrões existentes, a validação é para ajustar os hiperparâmetros, comparar as versões, e o teste é para ver a assertividade do modelo. O problema de se utilizar o conjunto de teste no treinamento, é que não teremos casos novos para testar
+
+6 - a) O problema que pode ocorrer é o modelo aprender e querer prever a classe majoritária sempre
+b) As duas formas de corrigir isso é utilizando Oversampling, que é aumentar a classe minoritária artificialmente, ou Undersampling, que é reduzir a classe majoritária para equilibrar as classes 
+
+7-a) Outliers são aquelas valores extremos, que fogem do padrão
+b) Pode ser prejudicial quando são casos reais e importantes, ou quando é justamente o que queremos prever, casos extremos 
+c)
+
+8 - Criar a variável idade é melhor do que usar diretamente a data de nascimento porque a idade é uma informação mais direta e relevante para o modelo, além de ser numérica e mais fácil de interpretar.
+
+9 - O pipeline completo seria: 
+Tratar os valores ausentes
+Codificação das variáveis categóricas
+Normalizar as variáveis numéricas
+Balancear as classes
+Dividir os dados em treino, validação e teste
+
+10) Etapas:
+Verificar os tipos de variáveis 
+Tratar os valores ausentes
+Caso necessário, tratar os outliers
+Transformar variáveis categóricas 
+Normalizar 
+Dividir os dados em treino, validação e teste
